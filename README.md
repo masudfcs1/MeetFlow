@@ -7,7 +7,8 @@ First, run the development server:
 npm run dev
 ```
 <img width="1614" height="836" alt="image" src="https://github.com/user-attachments/assets/29d06dc4-d975-4629-94ef-d5b7d61cd417" />
-<img width="1919" height="1000" alt="image" src="https://github.com/user-attachments/assets/9887cc27-5b01-4375-b21b-1c7b42ee6687" />
+<img width="1919" height="1000" alt="image" src="https://github.com/user-attachments/assets/dd5b561a-b2f4-4e23-b85c-ed9b536b354a" />
+<img width="1915" height="999" alt="image" src="https://github.com/user-attachments/assets/5c9d7a37-c31c-4961-b459-e0da8c26acf5" />
 <img width="1919" height="1001" alt="image" src="https://github.com/user-attachments/assets/f8cd26ad-317a-4b58-a0fb-592900ff0056" />
 <img width="1882" height="984" alt="image" src="https://github.com/user-attachments/assets/48f4a320-d44c-4634-a2d5-2783ffe96a35" />
 <img width="1891" height="860" alt="image" src="https://github.com/user-attachments/assets/e1406cb5-e29e-4887-ae49-23fb8b14936d" />
