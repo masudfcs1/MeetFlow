@@ -492,16 +492,16 @@ export default function MeetingRoom() {
           </Button>
         </div>
 
-        <Tabs defaultValue="create" className="w-full">
-          <TabsList className="grid w-full grid-cols-4">
-            <TabsTrigger value="create">Create Room</TabsTrigger>
-            <TabsTrigger value="schedule">Schedule</TabsTrigger>
-            <TabsTrigger value="history">History</TabsTrigger>
-            <TabsTrigger value="settings">Settings</TabsTrigger>
+        <Tabs defaultValue="create" className="w-full dark:text-white">
+          <TabsList className="grid w-full grid-cols-4 " >
+            <TabsTrigger value="create" className={isDarkMode ? ' text-blue-500': 'text-black'}>Create Room</TabsTrigger>
+            <TabsTrigger value="schedule" className={isDarkMode ? ' text-blue-500': 'text-black'}>Schedule</TabsTrigger>
+            <TabsTrigger value="history" className={isDarkMode ? ' text-blue-500': 'text-black'}>History</TabsTrigger>
+            <TabsTrigger value="settings" className={isDarkMode ? ' text-blue-500': 'text-black'}>Settings</TabsTrigger>
           </TabsList>
 
           {/* Create Room Tab */}
-          <TabsContent value="create">
+          <TabsContent value="create" className="dark:bg-blue-500">
             <Card className={`shadow-xl border-0 ${isDarkMode ? "bg-gray-800 text-white" : ""}`}>
               <CardHeader className="text-center">
                 <CardTitle className="text-xl">Start a New Meeting</CardTitle>
@@ -575,7 +575,7 @@ export default function MeetingRoom() {
 
                 <Button
                   onClick={createRoom}
-                  className="w-full bg-blue-600 hover:bg-blue-700"
+                  className="w-full bg-blue-600 text-white hover:bg-blue-700"
                   disabled={isPasswordProtected && !roomPassword.trim()}
                 >
                   <Video className="h-4 w-4 mr-2" />
@@ -722,7 +722,7 @@ export default function MeetingRoom() {
                       >
                         Cancel
                       </Button>
-                      <Button onClick={scheduleNewMeeting} className="bg-blue-600 hover:bg-blue-700">
+                      <Button onClick={scheduleNewMeeting} className="bg-blue-600 hover:bg-blue-700 text-white">
                         {editingMeeting ? "Update Meeting" : "Schedule Meeting"}
                       </Button>
                     </div>
@@ -744,7 +744,7 @@ export default function MeetingRoom() {
                       </CardDescription>
                     </div>
                     {!isScheduling && (
-                      <Button onClick={() => setIsScheduling(true)} className="bg-blue-600 hover:bg-blue-700">
+                      <Button onClick={() => setIsScheduling(true)} className="bg-blue-600 hover:bg-blue-700 text-white">
                         <Plus className="h-4 w-4 mr-2" />
                         Schedule Meeting
                       </Button>
