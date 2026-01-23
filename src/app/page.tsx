@@ -8,12 +8,12 @@ import LobbyView from "@/components/lobbyView/lobbyView"
 import MeetingView from "@/components/MeetingView/MeetingView"
 
 export default function MeetingRoom() {
-  // Basic states
+
   const [roomName, setRoomName] = useState("")
   const [displayName, setDisplayName] = useState("")
   const [currentRoom, setCurrentRoom] = useState<string | null>(null)
 
-  // Feature states
+
   const [roomPassword, setRoomPassword] = useState("")
   const [isPasswordProtected, setIsPasswordProtected] = useState(false)
   const [isDarkMode, setIsDarkMode] = useState(false)
@@ -23,12 +23,12 @@ export default function MeetingRoom() {
   const [maxParticipants, setMaxParticipants] = useState("10")
   const [roomExpiry, setRoomExpiry] = useState("60")
 
-  // Calendar/Scheduling states
+
   const [scheduledMeetings, setScheduledMeetings] = useState<ScheduledMeeting[]>([])
   const [isScheduling, setIsScheduling] = useState(false)
   const [editingMeeting, setEditingMeeting] = useState<ScheduledMeeting | null>(null)
 
-  // Schedule form states
+
   const [scheduleForm, setScheduleForm] = useState({
     title: "",
     description: "",
@@ -43,7 +43,7 @@ export default function MeetingRoom() {
     maxParticipants: "10",
   })
 
-  // Load saved data
+
   useEffect(() => {
     const savedHistory = localStorage.getItem("meetingHistory")
     const savedTheme = localStorage.getItem("darkMode")
@@ -56,7 +56,7 @@ export default function MeetingRoom() {
     if (savedScheduled) setScheduledMeetings(JSON.parse(savedScheduled))
   }, [])
 
-  // Save theme preference
+
   useEffect(() => {
     localStorage.setItem("darkMode", JSON.stringify(isDarkMode))
     if (isDarkMode) {
@@ -71,7 +71,7 @@ export default function MeetingRoom() {
     localStorage.setItem("scheduledMeetings", JSON.stringify(scheduledMeetings))
   }, [scheduledMeetings])
 
-  // Check URL for existing room
+
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
     const room = params.get("room")
