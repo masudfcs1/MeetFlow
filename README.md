@@ -17,8 +17,6 @@ npm run dev
 <img width="1487" height="799" alt="image" src="https://github.com/user-attachments/assets/1e2fe8cb-c5a3-4c18-8900-390554b6deb4" />
 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
